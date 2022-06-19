@@ -1,4 +1,6 @@
 Feature: Adding
+    We will input a number of integres and the the calculator will show us the sum output.
+
     Scenario Outline: Add two numbers
         Given the input "<input>"
         When the calculator is run 
