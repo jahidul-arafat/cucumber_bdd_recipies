@@ -26,34 +26,11 @@ Took 0m0.000s
 
 from behave import given, when, then                    # pip install behave
 from hamcrest import assert_that, equal_to, is_not      # pip install pyhamcrest
+from ninja_fight import NinjaFight
 
-
-#--------------------------------------------------------------------------------
-# PROBLEM DOMAIN:
-#--------------------------------------------------------------------------------
-
-class NinjaFight(object):
-    def __init__(self, with_ninja_level):
-        self.with_ninja_level = with_ninja_level 
-        self.opponent = None 
-    
-    def decision(self):
-        # Business logic for a Ninja should react to increase his survival rate
-        assert self.with_ninja_level is not None
-        assert self.opponent is not None
-        if self.opponent == "Chuck Norris":
-            return "run for his life"
-        else:
-            return "engage the opponent"
-
-
-#--------------------------------------------------------------------------------
-# STEPS:
-#--------------------------------------------------------------------------------
 @given(u'the ninja has a {achievement_level}')
 def step_impl(context, achievement_level):
     context.ninja_fight = NinjaFight(achievement_level) # Define the class
-
 
 @when(u'attacked by a {opponent_weapon}')
 def step_impl(context,opponent_weapon):
