@@ -1,0 +1,133 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/tutorial01_step_within_step.feature:3",
+      "name": "Step by Step",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/tutorial01_step_within_step.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:23"
+          },
+          "name": "I start a new game",
+          "result": {
+            "duration": 7.033348083496094e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/tutorial01_step_within_step.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:28"
+          },
+          "name": "I press the big red button",
+          "result": {
+            "duration": 2.8848648071289062e-05,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/tutorial01_step_within_step.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:33"
+          },
+          "name": "I duck",
+          "result": {
+            "duration": 2.5987625122070312e-05,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/tutorial01_step_within_step.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:38"
+          },
+          "name": "I reach the next level",
+          "result": {
+            "duration": 2.7894973754882812e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "scenario_01"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/tutorial01_step_within_step.feature:10",
+      "name": "Execute multiple Steps in middle step",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/tutorial01_step_within_step.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:23"
+          },
+          "name": "I start a new game",
+          "result": {
+            "duration": 3.3855438232421875e-05,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/tutorial01_step_within_step.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:44"
+          },
+          "name": "I do the same thing as before",
+          "result": {
+            "duration": 0.00022792816162109375,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/tutorial01_step_within_step.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/step_feature01.py:38"
+          },
+          "name": "I reach the next level",
+          "result": {
+            "duration": 2.193450927734375e-05,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "scenario_02"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/tutorial01_step_within_step.feature:1",
+  "name": "Step executes other steps (tutorial10)",
+  "status": "passed",
+  "tags": []
+}
+]

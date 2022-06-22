@@ -1,0 +1,28 @@
+<testsuite name="tutorial01_step_within_step.Step executes other steps (tutorial10)" tests="2" errors="0" failures="0" skipped="0" time="0.00051" timestamp="2022-06-22T18:41:22.573795" hostname="jarotballs-MacBook-Pro.local"><testcase classname="tutorial01_step_within_step.Step executes other steps (tutorial10)" name="Step by Step" status="passed" time="0.000192"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @scenario_01
+  Scenario: Step by Step
+    Given I start a new game ... passed in 0.000s
+    When I press the big red button ... passed in 0.000s
+    And I duck ... passed in 0.000s
+    Then I reach the next level ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="tutorial01_step_within_step.Step executes other steps (tutorial10)" name="Execute multiple Steps in middle step" status="passed" time="0.000318"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @scenario_02
+  Scenario: Execute multiple Steps in middle step
+    Given I start a new game ... passed in 0.000s
+    When I do the same thing as before ... passed in 0.000s
+    Then I reach the next level ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

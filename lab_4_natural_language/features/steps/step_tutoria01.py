@@ -43,3 +43,18 @@ def step_impl(context,opponent_person):
 @then(u'the ninja should {reaction}')      
 def step_impl(context,reaction):
     assert_that(reaction,equal_to(context.ninja_fight.decision()))
+
+# Background step
+"""
+hasattr - The hasattr() function returns True if the specified object has the specified attribute, otherwise False.
+-------
+class Person:
+  name = "John"
+  age = 36
+  country = "Norway"
+
+x = hasattr(Person, 'age') # TRUE
+"""
+@given(u'the ninja encounters another opponent') # this will be the very first step for every scenario
+def step_impl(context):
+    context.ninja_fight = None
