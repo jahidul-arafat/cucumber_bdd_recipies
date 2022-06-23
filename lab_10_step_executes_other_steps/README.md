@@ -24,5 +24,5 @@
 > behave -f allure_behave.formatter:AllureFormatter -o my_allure
 
 # start the allure webserver to view the report
-> alliure server my_allure
+> allure server my_allure
 ```
